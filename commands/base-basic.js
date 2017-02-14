@@ -148,6 +148,9 @@ exports.commands = {
 	say: function (arg) {
 		if (!arg) return;
 		if (!this.can('say')) return;
-		this.reply(Tools.stripCommands(arg));
+		this.say(arg.split(",")[0], arg.split(",").slice(1).join(","));
+	}
+};
+
 	}
 };
