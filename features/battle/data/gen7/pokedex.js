@@ -1,7 +1,7 @@
 "use strict"
 
 exports.BattlePokedex = {
-   rowlet: {
+         rowlet: {
 		num: 722,
 		species: "Rowlet",
 		types: ["Grass", "Flying"],
@@ -1424,3 +1424,4 @@ exports.BattlePokedex = {
 		color: "Gray",
 		eggGroups: ["Undiscovered"],
 	}
+};
