@@ -32,7 +32,7 @@ exports.crashguard = true;
 * Security log
 */
 
-exports.securityLog = {ageOfLogs: 7};
+exports.securityLog = {ageOfLogs: 3};
 
 /*
 * Watch Config
@@ -81,7 +81,6 @@ exports.exceptions = {
 	"shockingzinogre": true,
 	"fluffypachirisu": true,
 	"kirarothekitsune": true,
-
 	"claymander": true,
 	"stc99": true};
 
@@ -120,8 +119,8 @@ exports.permissionExceptions = {
 	'autoban': '#',
 	'banword': '#',
 	'joinphrase': '#',
-	'challenge': '%',
-	'searchbattle': '~',
+	'challenge': '@,
+	'searchbattle': '@,
 	'tournament': '%',
 	'games': '%',
 	'usage': '#'
@@ -175,7 +174,7 @@ exports.debug = {
 */
 
 exports.moderation = {
-	modException: '%', // Min rank for not receive moderation
+	modException: '# // Min rank for not receive moderation
 
 	allowmute: true,
 	disableModNote: false,
@@ -185,10 +184,10 @@ exports.moderation = {
 		FLOOD_PER_MSG_MIN: 500, // this is the minimum time between messages for legitimate spam. It's used to determine what "flooding" is caused by lag
 		FLOOD_MESSAGE_TIME: 6 * 1000,
 
-		MIN_CAPS_LENGTH: 1000,
+		MIN_CAPS_LENGTH: 8
 		MIN_CAPS_PROPORTION: 0.8,
 
-		MAX_STRETCH: 5,
+		MAX_STRETCH: 6
 		MAX_REPEAT: 4
 	},
 
@@ -244,11 +243,11 @@ exports.moderation = {
 		"sim": 1
 	},
 
-	zeroToleranceDefaultLevel: 'h',
+	zeroToleranceDefaultLevel: '2,
 	zeroToleranceLevels: {
 		'l': {name: 'Low', value: 1},
-		'n': {name: 'Normal', value: 2},
-		'h': {name: 'High', value: 3}
+		'2': {name: 'normal', value: 2},
+		'3': {name: 'hard', value:3},
 	}
 };
 
@@ -260,14 +259,13 @@ exports.aceptAll = true;
 
 exports.maxBattles = 3;
 
-exports.initBattleMsg = ['Good Luck, do your best!'];
+exports.initBattleMsg = ['Goodk luck! Battle well! Nya~!']
 
-exports.winmsg = ['Yes! I won!', 'You did your best.'];
+exports.winmsg = ['Yes! I won! Nya~!', 'Better luck next time I guess!']
 
-exports.losemsg = ['You were just too strong...', 'No way! __sigh__ You win!'];
+exports.losemsg = ['You were just too strong... __sigh__', 'No way! Ihave been defeated yet again!']
 
 exports.battleMessages = {
-	/* Examples of battle messages:
 	'crit': {
 		'self': ['Cool!', 'You have a good strategy!'],
 		'foe': ['Yes! My luck is at my side!', 'Good job!', 'Take that #USER']
@@ -275,7 +273,6 @@ exports.battleMessages = {
 	'miss': {
 		'self': ['No way!', 'There goes my luck~']
 	}
-	*/
 };
 
 exports.battleModules = {
@@ -290,7 +287,7 @@ exports.abandonedBattleAutojoin = true;
 
 exports.ladderCheckInterval = 10 * 1000;
 
-exports.ladderNumberOfBattles = 1;
+exports.ladderNumberOfBattles = 3;
 
 exports.formatAliases = {
 	'random': 'Random Battle',
@@ -398,9 +395,9 @@ exports.groupchats = ['groupchat-stc99-hairflick'];
 
 exports.groupChatTryJoinInterval = 60 * 1000;
 
-/* Test example
-exports.groupchats['groupchat-ecuacion-test'] = {	toJoin: ['/join groupchat-stc99-hairflick'],
+
+exports.groupchats['groupchat-ecuacion-test'] = {
+	toJoin: ['/join groupchat-stc99-hairflick', '/join groupchat-sparkychild-firefox'],
 	onJoin: ['Hi guys!'],
-	onLeave: [Bye bye!]
+	onLeave: ['Bye bye guys and gals!']
 };
-*/
