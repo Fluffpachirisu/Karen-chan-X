@@ -259,16 +259,16 @@ exports.aceptAll = true;
 
 exports.maxBattles = 3;
 
-exports.initBattleMsg = ['Goodk luck! Battle well! Nya~!']
+exports.initBattleMsg = ['Good luck! Battle well! Nya~!']
 
 exports.winmsg = ['Yes! I won! Nya~!', 'Better luck next time I guess!']
 
-exports.losemsg = ['You were just too strong... __sigh__', 'No way! Ihave been defeated yet again!']
+exports.losemsg = ['You were just too strong... __sigh__', 'No way! I have been defeated yet again!']
 
 exports.battleMessages = {
 	'crit': {
 		'self': ['Cool!', 'You have a good strategy!'],
-		'foe': ['Yes! My luck is at my side!', 'Good job!', 'Take that #USER']
+		'foe': ['Yes! My luck is at my side!', 'Good job!', 'Don\'t mess with Karen or she will bite!']
 	},
 	'miss': {
 		'self': ['No way!', 'There goes my luck~']
@@ -304,7 +304,8 @@ exports.formatAliases = {
 	'adv': '[Gen 3] OU',
 	'gsc': '[Gen 2] OU',
 	'rby': '[Gen 1] OU'
-};
+,
+	'smou': 'Gen 7 OU'};
 
 /*
 * Tournaments
@@ -385,17 +386,13 @@ exports.github = {
 	room: 'development',
 	secret: "",
 	port: 3420
-};
-
-/*
+};/*
 * Groupchats
 */
 
-exports.groupchats = ['groupchat-stc99-hairflick'];
-
 exports.groupChatTryJoinInterval = 60 * 1000;
 
-	toJoin: ['/join groupchat-stc99-hairflick', '/join groupchat-sparkychild-firefox'],
-	onJoin: ['Hi guys!'],
+exports.groupchats = ['groupchat-stc99-hairflick', 'groupchat-sparkychild-firefox'];
+	toJoin: ['/join groupchat-stc99-hairflick', '/join groupchat-sparkychild-firefox'];
+	onJoin: ['Hi guys!'];
 	onLeave: ['Bye bye guys and gals!']
-};
