@@ -1,4 +1,4 @@
-﻿/*
+/*
 	config.js - Configuration File
 */
 
@@ -119,8 +119,8 @@ exports.permissionExceptions = {
 	'autoban': '#',
 	'banword': '#',
 	'joinphrase': '#',
-	'challenge': '@,
-	'searchbattle': '@,
+	'challenge': '@',
+	'searchbattle': '@',
 	'tournament': '%',
 	'games': '%',
 	'usage': '#'
@@ -174,7 +174,7 @@ exports.debug = {
 */
 
 exports.moderation = {
-	modException: '# // Min rank for not receive moderation
+	modException: '%', // Min rank for not receive moderation
 
 	allowmute: true,
 	disableModNote: false,
@@ -184,11 +184,11 @@ exports.moderation = {
 		FLOOD_PER_MSG_MIN: 500, // this is the minimum time between messages for legitimate spam. It's used to determine what "flooding" is caused by lag
 		FLOOD_MESSAGE_TIME: 6 * 1000,
 
-		MIN_CAPS_LENGTH: 8
+		MIN_CAPS_LENGTH: 8,
 		MIN_CAPS_PROPORTION: 0.8,
 
 		MAX_STRETCH: 6
-		MAX_REPEAT: 4
+,		MAX_REPEAT: 4,
 	},
 
 	values: {
@@ -243,7 +243,7 @@ exports.moderation = {
 		"sim": 1
 	},
 
-	zeroToleranceDefaultLevel: '2,
+	zeroToleranceDefaultLevel: '2',
 	zeroToleranceLevels: {
 		'l': {name: 'Low', value: 1},
 		'2': {name: 'normal', value: 2},
@@ -395,8 +395,6 @@ exports.groupchats = ['groupchat-stc99-hairflick'];
 
 exports.groupChatTryJoinInterval = 60 * 1000;
 
-
-exports.groupchats['groupchat-ecuacion-test'] = {
 	toJoin: ['/join groupchat-stc99-hairflick', '/join groupchat-sparkychild-firefox'],
 	onJoin: ['Hi guys!'],
 	onLeave: ['Bye bye guys and gals!']
