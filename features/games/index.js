@@ -11,9 +11,10 @@ var gamesList = [
 	'hangman.js', 'poke-hangman.js',
 	'anagrams.js', 'poke-anagrams.js',
 	'trivia.js', 'kunc.js',
-	'blackjack.js',
+	'blackjack.js', 
 	'ambush.js',
-	'passthebomb.js'
+	'passthebomb.js',
+	'mhtrivia.js'
 ];
 
 var Builders = exports.Builders = {};
