@@ -1,4 +1,4 @@
-/*
+﻿/*
 	config.js - Configuration File
 */
 
@@ -44,7 +44,7 @@ exports.watchconfig = true;
 * Login Details
 */
 
-exports.nick = "Karen-chan X";
+exports.nick = "Neko~chan X";
 
 exports.pass = "fluffy1A";
 
@@ -54,7 +54,7 @@ exports.autoReloginDelay = 60 * 1000;
 * Rooms to join
 */
 
-exports.rooms = ["groupchat-sparkychild-firefox", "roleplaying", "groupchat-stc99-hairflick"];
+exports.rooms = ["groupchat-stc99-hairflick", "groupchat-jahim-hairflick"];
 
 /*
 * exports.rooms = 'all'; //For joining all rooms
@@ -67,11 +67,11 @@ exports.privateRooms = { //Rooms listed here will be ignored by seen command
 	//privateroomname: true
 };
 
-exports.ignoreRooms = { //Rooms listed here will be ignored by CommandParser (bot is "asleep" in those rooms)
-	//roomid: true
+exports.ignoreRooms = { /*Rooms listed here will be ignored by CommandParser (bot is "asleep" in those rooms)*/
+	roleplaying: true
 };
 
-exports.initCmds = ['|/avatar 172'];
+exports.initCmds = ['|/avatar 23'];
 
 /*
 * Auth configuration
@@ -81,18 +81,16 @@ exports.exceptions = {
 	"shockingzinogre": true,
 	"fluffypachirisu": true,
 	"kirarothekitsune": true,
-	"claymander": true,
-	"stc99": true};
-
+	"karenchanx": true
+};
 /*
 * 'userid': 'rank' or 'userid': true for full access
 * Example:
 *
 * exports.exceptions = {
-*	'kirarothekitsune': true,	'karenchanx':true};
+*	'kirarothekitsune': true
 *
 */
-
 exports.ranks = ['+', '\u2605', '%', '@', '#', '&', '~'];
 
 exports.globalPermissions = {
@@ -114,7 +112,7 @@ exports.defaultPermission = '';
 exports.permissionExceptions = {
 	//command: 'rank'
 	'say': '#',
-	'info': '+',
+	'info': '%',
 	'wall': '%',
 	'autoban': '#',
 	'banword': '#',
@@ -122,11 +120,11 @@ exports.permissionExceptions = {
 	'challenge': '@',
 	'searchbattle': '@',
 	'tournament': '%',
-	'games': '%',
 	'usage': '#'
 };
 
-exports.botguide = "https://github.com/Ecuacion/Pokemon-Showdown-Node-Bot/blob/master/commands/README.md";
+exports.botguide = 
+"https://hastebin.com/fasaqeniyo.sql";
 
 //When you pm the bot but don't use a command, it replies you this message. Example: "Hi, I'm a bot. Use .help to view a command guide"
 //The var #USER is replaced with the username that pms it
@@ -257,13 +255,13 @@ exports.moderation = {
 
 exports.aceptAll = true;
 
-exports.maxBattles = 3;
+exports.maxBattles = 1;
 
 exports.initBattleMsg = ['Good luck! Battle well! Nya~!']
 
-exports.winmsg = ['Yes! I won! Nya~!', 'Better luck next time I guess!']
+exports.winmsg = ['Yes! I won! Nya~!', 'Better luck next time I guess!', 'Another victory for karen! Yes!']
 
-exports.losemsg = ['You were just too strong... __sigh__', 'No way! I have been defeated yet again!']
+exports.losemsg = ['You were just too strong... __sigh__', 'No way! I have been defeated yet again!', 'Karen has lost\, Kiraro won\'t like that. __sigh__']
 
 exports.battleMessages = {
 	'crit': {
@@ -287,7 +285,7 @@ exports.abandonedBattleAutojoin = true;
 
 exports.ladderCheckInterval = 10 * 1000;
 
-exports.ladderNumberOfBattles = 3;
+exports.ladderNumberOfBattles = 1;
 
 exports.formatAliases = {
 	'random': 'Random Battle',
@@ -303,14 +301,13 @@ exports.formatAliases = {
 	'dpp': '[Gen 4] OU',
 	'adv': '[Gen 3] OU',
 	'gsc': '[Gen 2] OU',
-	'rby': '[Gen 1] OU'
-,
-	'smou': 'Gen 7 OU'};
+	'rby': '[Gen 1] OU',
+	'smou': '[Gen 7] OU'
+};
 
 /*
 * Tournaments
 */
-
 exports.tourDefault = {
 	format: 'random',
 	type: 'elimination',
@@ -386,13 +383,19 @@ exports.github = {
 	room: 'development',
 	secret: "",
 	port: 3420
-};/*
+};
+
+/*
 * Groupchats
 */
 
 exports.groupChatTryJoinInterval = 60 * 1000;
 
-exports.groupchats = ['groupchat-stc99-hairflick', 'groupchat-sparkychild-firefox'];
-	toJoin: ['/join groupchat-stc99-hairflick', '/join groupchat-sparkychild-firefox'];
-	onJoin: ['Hi guys!'];
+exports.groupchats = ['groupchat-stc99-hairflick', 'groupchat-ecuacion-test'];
+
+exports.groupchats - ['groupchat-stc99-hairflick', 'groupchat-ecuacion-test'] - {
+	
+	toJoin: ['/join groupchat-stc99-hairflick', '/groupchat-ecuacion-test'],
+	onJoin: ['Hi guys!'],
 	onLeave: ['Bye bye guys and gals!']
+};

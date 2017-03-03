@@ -66,7 +66,7 @@ try {
 	settings = exports.settings = settingsFFM.readObj();
 } catch (e) {
 	errlog(e.stack);
-	error("Could not import settings: " + sys.inspect(e));
+	error("Could not import settings: " + util.inspect(e));
 }
 
 var save = exports.save =  function () {
@@ -324,7 +324,7 @@ try {
 	httpCache = exports.httpCache = cacheFFM.readObj();
 } catch (e) {
 	errlog(e.stack);
-	error("Could not import http cache: " + sys.inspect(e));
+	error("Could not import http cache: " + util.inspect(e));
 }
 
 exports.httpGetAndCache = function (url, callback, onDownload) {
