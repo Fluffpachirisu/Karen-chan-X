@@ -151,6 +151,3 @@ exports.commands = {
 		this.say(arg.split(",")[0], arg.split(",").slice(1).join(","));
 	}
 };
-
-	}
-};

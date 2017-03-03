@@ -15,6 +15,7 @@ exports.commands = {
 	pokehangman: 'execgame',
 	pokeanagrams: 'execgame',
 	trivia: 'execgame',
+	mhtrivia: 'execgame',
 	blackjack: 'execgame',
 	kunc: 'execgame',
 	ambush: 'execgame',
