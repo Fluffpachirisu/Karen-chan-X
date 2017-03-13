@@ -46,7 +46,7 @@ exports.watchconfig = true;
 
 exports.nick = "Neko~chan X";
 
-exports.pass = "fluffy1A";
+exports.pass = "your password here";
 
 exports.autoReloginDelay = 60 * 1000;
 
